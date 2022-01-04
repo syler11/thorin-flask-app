@@ -26,7 +26,7 @@ def about_member(member_name):
         for obj in data:
             if obj["url"] == member_name:
                 member = obj
-    return render_template("member.html" member=member)
+    return render_template("member.html", member=member)
 
 
 @app.route("/contact")
